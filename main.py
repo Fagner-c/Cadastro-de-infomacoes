@@ -117,7 +117,7 @@ def janela_desiner():
         else:
             for user in usuarios:
                 cont += 1
-                texto = f'{cont}-Nome: {user['nome']} | Idade: {user['idade']} | Cpf: {user['cpf']} | Endereço: {user['endereço']} | Profissão: {user['profissão']} | Email: {user['email']}\n'
+                texto = f"{cont}-Nome: {user['nome']} | Idade: {user['idade']} | Cpf: {user['cpf']} | Endereço: {user['endereço']} | Profissão: {user['profissão']} | Email: {user['email']}\n"
                 users += texto
         #Exibindo os usuarios:
         exibindo = Label(frame_exibir,text = users ,font='Arial, 8', background='#1C1C1C', foreground='#FFFAFA')
@@ -143,11 +143,11 @@ def janela_desiner():
     #Adicionando os ultimos:
     if len(usuarios) == 1:
         txt_ultimo_lb = Label(frame_ultimo_adicionado, text='Ultimos adicionados: ',  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.1)
-        ultimo1_lb = Label(frame_ultimo_adicionado, text=f'Nome: {usuarios[-1]['nome']} | Email: {usuarios[-1]['email']} | Cpf: {usuarios[-1]['cpf']}',  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.3)
+        ultimo1_lb = Label(frame_ultimo_adicionado, text=f"Nome: {usuarios[-1]['nome']} | Email: {usuarios[-1]['email']} | Cpf: {usuarios[-1]['cpf']}",  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.3)
     elif len(usuarios) > 1:
         txt_ultimo_lb = Label(frame_ultimo_adicionado, text='Ultimos adicionados: ',  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.1)
-        ultimo1_lb = Label(frame_ultimo_adicionado,text=f'Nome: {usuarios[-1]['nome']} | Email: {usuarios[-1]['email']} | Cpf: {usuarios[-1]['cpf']}',  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.3)
-        ultimo2_lb = Label(frame_ultimo_adicionado, text=f'Nome: {usuarios[-2]['nome']} | Email: {usuarios[-2]['email']} | Cpf: {usuarios[-2]['cpf']}', font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.6)
+        ultimo1_lb = Label(frame_ultimo_adicionado,text=f"Nome: {usuarios[-1]['nome']} | Email: {usuarios[-1]['email']} | Cpf: {usuarios[-1]['cpf']}",  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.3)
+        ultimo2_lb = Label(frame_ultimo_adicionado, text=f"Nome: {usuarios[-2]['nome']} | Email: {usuarios[-2]['email']} | Cpf: {usuarios[-2]['cpf']}", font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx=0.02, rely=0.6)
     else:
         ultimo1_lb = Label(frame_ultimo_adicionado, text='Nenhum adicionado ainda',  font='Arial, 9',foreground= '#FFFAFA', background='#1C1C1C').place(relx= 0.02,rely=0.1)
 #Execultando janela e suas funções:
